@@ -1,0 +1,156 @@
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,400;0,800;0,900;1,300&display=swap');
+
+// Colors
+$dark-color: #24292d;
+$bright-color: #fffffa;
+$contrast-color: #de172e;
+$full-bg-color: #fffffa;
+// breakpoints
+$breakpoint-tablet: 768px;
+
+// Fonts
+$Heading-font: 'Mulish', cursive;
+$Heading-weight: 900;
+
+$Body-text-font: 'Mulish', sans-serif;
+$Body-text-weight: 400;
+
+// Screen breakpoints
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 490px;
+
+#root {
+  background-image: url('../src/assets/bg-desktop.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  @media (max-width: $breakpoint-tablet) {
+    background-image: url('../src/assets/bg-mobil.jpg');
+  }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .App {
+  background-color: rgba(255, 255, 255, 0.90);
+  margin: 0;
+  min-height: 100vh;
+  margin: 0px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+
+  overflow-x: hidden;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  padding: 8vh 0px 0vh 0px;
+
+  color: $bright-color;
+  text-align: center;
+  font-family: $Body-text-font;
+
+    header {
+      width: 70vw;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+
+    .App-header {
+      h1 {
+        font-family: $Heading-font;
+        color: $dark-color;
+        font-weight: $Heading-weight;
+        line-height: 1;
+        
+        font-size: 125px;
+        text-align: center;
+      }
+
+      p {
+        max-width: 800px;
+        color: $contrast-color;
+        font-size: 24px;
+      }
+      
+      @media (max-width: $breakpoint-tablet) {
+        h1 {font-size: 70px;}
+        p {font-size: 18px;}
+      }
+    }
+
+    .react-spinner-material {
+      margin: 0 auto;
+    }
+
+    .btn {
+      color: white !important;
+    }
+  
+    main {
+      padding: 20px 0px 0px 0px;
+      width: 75vw;
+      text-align: center;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+      main {width: 100vw;}
+
+      p {
+        font-size: 14px;
+        line-height: 1.8;
+      }
+    }
+  }
+  .progress {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    background-color: none;
+  }
+
+  footer {
+
+    color: $dark-color;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 14px;
+    padding: 20px 0px;
+
+    .who {
+      font-size: 14px;
+      font-weight: 400;
+      font-family: $Heading-font;
+      margin: 0px;
+    }
+  
+    a {
+      font-weight: 800;
+      color: $contrast-color;
+      text-decoration: none;
+    }
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    .App {padding: 4vh 0px 0vh 0px;} 
+}

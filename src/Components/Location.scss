@@ -1,0 +1,49 @@
+@import "/src/App.scss";
+
+.location-section {
+    padding: 20px 0px;
+    width: 400px;
+    max-width: 500px;
+    margin: 0;
+    text-align: center;
+
+    .location-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+       .postion {
+        color: $contrast-color;
+        margin: 0px;
+        font-weight: 800;
+       }
+       
+       .postion-text {
+        color: $dark-color;
+        margin: 0px;
+       }
+    }
+
+    .MuiSvgIcon-root {
+        color: black;
+    }
+    
+    p {
+        font-size: 16px;
+        color: $dark-color;
+    }
+
+    h2 {
+        font-family: $Heading-font;
+        font-size: 32px;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 1.5;
+        color: $dark-color;
+    }
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .location-section {padding: 0px;}
+    .location-box {margin: 0 auto; }
+  }

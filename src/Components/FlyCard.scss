@@ -1,0 +1,87 @@
+@import "/src/App.scss";
+
+.card-list {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: $dark-color;
+
+    li {
+        font-size: 18px;
+    }
+  }
+  
+  .card-list-title {
+    font-family: $Heading-font;
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.5;
+      color: $dark-color;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 20px 20px;
+    box-shadow: 5px 5px 15px rgba(33, 37, 41, 0.05),0 2px 10px rgba(33, 37, 41, 0.75);
+    color: $dark-color;
+    transition: 0.5s ease;
+    border: 1px solid $dark-color;
+  }
+
+  .card-title {
+    font-size: 36px;
+    color: white;
+    font-weight: 400;
+  }
+
+  .card-body {
+    background-color: #7a0000;
+    border-radius: 0px;
+    padding: 15px 0px px 0px;
+  }
+
+  .card-button {
+    background-color: $dark-color;
+    color: $contrast-color;
+    border: none;
+    box-shadow: 5px 5px 15px rgba(33, 37, 41, 0.05),0 2px 10px rgba(33, 37, 41, 0.75);
+    margin: 10px 0px;
+    padding: 10px 30px;
+
+    .btn {
+      color: white;
+    }
+  }
+
+  .btn-primary {
+    @include button-variant($contrast-color, darken($contrast-color, 7.5%), darken($contrast-color, 10%), lighten($contrast-color,5%), lighten($contrast-color, 10%), darken($contrast-color,30%));
+    }
+
+  .card-country {
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 5px;
+  }
+
+  .card-subtitle {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: white;
+  }
+
+  .list-group-item {
+    padding: 0;
+  }
