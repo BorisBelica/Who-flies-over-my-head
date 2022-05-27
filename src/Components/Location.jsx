@@ -30,7 +30,7 @@ function Location(props) {
   return (
     <div className="location-section">
       <PersonPinCircleOutlinedIcon style={{ fontSize: 90 }} />
-      <h2>Tvoja poloha</h2>
+      <h2>Tvoja aktuálna poloha</h2>
       <div className="location-box">
         <div>
           <p className="postion">{ latitude }</p>

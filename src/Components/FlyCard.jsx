@@ -17,7 +17,7 @@ function FlyCard(props) {
     if(props.flyData.states !== null) {
         return (
             <div>
-                <h2 className="card-list-title">Nad tvojou hlavou letí</h2>
+                <h2 className="card-list-title">Nad tvojou hlavou práve letí</h2>
                 <div className="card-list">
                     {
                         props.flyData.states.map((flight, index) => {
@@ -76,7 +76,7 @@ function FlyCard(props) {
     /* IF THERE IS NO DATA IN FLYDATA PROPS - NO DATA LOADED */
     else {
         return (
-            <div className="card-list">
+            <div className="card-list no-data">
                 <ErrorOutlineIcon style={{ fontSize: 40 }} />
                 <h2>Žiadne lety neboli nájdené!</h2>
             </div>

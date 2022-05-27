@@ -1,5 +1,5 @@
 @import "~bootstrap/scss/bootstrap";
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,400;0,800;0,900;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;900&display=swap');
 
 // Colors
 $dark-color: #24292d;
@@ -10,15 +10,17 @@ $full-bg-color: #fffffa;
 $breakpoint-tablet: 768px;
 
 // Fonts
-$Heading-font: 'Mulish', cursive;
-$Heading-weight: 900;
+$Heading-font: 'Montserrat', sans-serif;
+$Heading-weight: 600;
 
-$Body-text-font: 'Mulish', sans-serif;
+$Body-text-font: 'Montserrat', sans-serif;
 $Body-text-weight: 400;
 
 // Screen breakpoints
 $breakpoint-tablet: 768px;
 $breakpoint-mobile: 490px;
+
+
 
 #root {
   background-image: url('../src/assets/bg-desktop.jpg');
@@ -27,21 +29,23 @@ $breakpoint-mobile: 490px;
   background-repeat: no-repeat;
   background-attachment: fixed;
 
+
   @media (max-width: $breakpoint-tablet) {
     background-image: url('../src/assets/bg-mobil.jpg');
   }
 }
 
+.overlay {
+  background-color: rgba(255, 255, 255, 0.80);
+}
+
 * {
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
   }
   
   .App {
-  background-color: rgba(255, 255, 255, 0.90);
+  //background-color: rgba(255, 255, 255, 0.90);
   margin: 0;
-  min-height: 100vh;
   margin: 0px;
 
   display: flex;
@@ -54,43 +58,10 @@ $breakpoint-mobile: 490px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  padding: 8vh 0px 0vh 0px;
-
   color: $bright-color;
   text-align: center;
   font-family: $Body-text-font;
 
-    header {
-      width: 70vw;
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-
-    .App-header {
-      h1 {
-        font-family: $Heading-font;
-        color: $dark-color;
-        font-weight: $Heading-weight;
-        line-height: 1;
-        
-        font-size: 125px;
-        text-align: center;
-      }
-
-      p {
-        max-width: 800px;
-        color: $contrast-color;
-        font-size: 24px;
-      }
-      
-      @media (max-width: $breakpoint-tablet) {
-        h1 {font-size: 70px;}
-        p {font-size: 18px;}
-      }
-    }
 
     .react-spinner-material {
       margin: 0 auto;
@@ -102,8 +73,21 @@ $breakpoint-mobile: 490px;
   
     main {
       padding: 20px 0px 0px 0px;
+      min-height: 90vh;
       width: 75vw;
       text-align: center;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      h1 {
+        font-size: 48px;
+        font-weight: 900;
+        color: $dark-color;
+      }
+
     }
 
     li {

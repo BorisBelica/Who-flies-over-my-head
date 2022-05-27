@@ -1,8 +1,8 @@
 @import "/src/App.scss";
 
 .location-section {
-    padding: 20px 0px;
-    width: 400px;
+    padding: 50px 0px;
+    
     max-width: 500px;
     margin: 0;
     text-align: center;
@@ -11,6 +11,10 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+
+        div {
+            padding: 0px 15px;
+        }
 
        .postion {
         color: $contrast-color;
@@ -29,15 +33,15 @@
     }
     
     p {
-        font-size: 16px;
+        font-size: 18px;
+        font-weight: 600;
         color: $dark-color;
     }
 
     h2 {
         font-family: $Heading-font;
-        font-size: 32px;
+        font-size: 15px;
         font-weight: 400;
-        text-transform: uppercase;
         line-height: 1.5;
         color: $dark-color;
     }
